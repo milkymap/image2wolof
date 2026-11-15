@@ -1,0 +1,20 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Local data, runs, secrets
+/data/
+/runs/
+.env
+.pytest_cache/
+
+# Paper: only the compiled PDF is versioned
+paper/*
+!paper/image2wolof.pdf
