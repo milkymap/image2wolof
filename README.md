@@ -10,6 +10,16 @@ trained from scratch on the five machine-translated Wolof captions of every Flic
 uv sync            # Python 3.12, torch 2.7.0 (CUDA 12.6), transformers 4.57.6
 ```
 
+## Pretrained model and data
+
+- model: [`milkymap/image2wolof`](https://huggingface.co/milkymap/image2wolof) (`best.pt` + `tokenizer.model`, epoch 6)
+- captions: [`milkymap/flickr30k-wolof`](https://huggingface.co/datasets/milkymap/flickr30k-wolof) (same content as [`dataset/`](dataset/README.md), one file per split)
+
+```bash
+hf download milkymap/image2wolof --local-dir runs/flickr30k
+image2wolof serve runs/flickr30k/best.pt --port 8080
+```
+
 ## Pipeline
 
 ```bash
