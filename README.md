@@ -4,6 +4,10 @@ Image captioning in Wolof: a frozen [SigLIP2-base](https://huggingface.co/google
 196 x 768, pinned revision) and a six-layer transformer decoder (d 512, 8 heads, ff 2048, tied embeddings, 27.9 M parameters)
 trained from scratch on the five machine-translated Wolof captions of every Flickr30k image ([`dataset/`](dataset/README.md)).
 
+**Paper:** [image2wolof: Wolof Image Captioning from Machine-Translated Captions with a Frozen SigLIP 2 Encoder](paper/image2wolof.pdf) (PDF)
+· **Model:** [milkymap/image2wolof](https://huggingface.co/milkymap/image2wolof)
+· **Dataset:** [milkymap/flickr30k-wolof](https://huggingface.co/datasets/milkymap/flickr30k-wolof)
+
 ## Install
 
 ```bash
